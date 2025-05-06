@@ -156,10 +156,5 @@ This will launch the application in your browser, allowing you to interact with 
 
 ---
 
-## Clean-Up
-
-After completing testing, ensure to delete any unused Azure resources or remove the entire Resource Group to avoid incurring additional charges.
-
-
 ## Disclaimer
 This demo application is intended solely for educational and demonstration purposes. It is provided "as-is" without any warranties, and users assume all responsibility for its use.
