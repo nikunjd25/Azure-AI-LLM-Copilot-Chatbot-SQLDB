@@ -126,8 +126,8 @@ AZURE_OPENAI_API_KEY="Key from deployed Azure AI Service"
 AZURE_OPENAI_ENDPOINT="Endpoint from deployed Azure AI Service"
 AZURE_OPENAI_MODEL="gpt-4o"
 AZURE_OPENAI_API_VERSION="2024-08-01-preview"
-AZURE_SQL_CONNECTION_STRING="mssql+pymssql://sqlAdmin:sqlPassword@sql-agentqna-demo-[randomnumber].database.windows.net:1433/sqldb-agentqna"
-AZURE_SQL_DATABASE_SCHEMA="SalesLT"
+AZURE_SQL_CONNECTION_STRING="mssql+pymssql://SQLUSER:sqlPassword@AzureSQLinstanceName.database.windows.net:1433/DatabaseName"
+AZURE_SQL_DATABASE_SCHEMA="SchemaName"
 ```
 
 ### 4. Set Up and Run the Streamlit Application
