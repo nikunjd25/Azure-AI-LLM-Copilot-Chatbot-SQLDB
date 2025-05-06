@@ -114,7 +114,7 @@ cd Azure-AI-Copilot-Chatbot-SQLDB
 
 
 
-### 3. Configure Environment Variables
+### 2. Configure Environment Variables
 
 To run this project, you need to create a .env file and populate it with the required environment variables. Follow these steps:
 
@@ -130,7 +130,7 @@ AZURE_SQL_CONNECTION_STRING="mssql+pymssql://SQLUSER:sqlPassword@AzureSQLinstanc
 AZURE_SQL_DATABASE_SCHEMA="SchemaName"
 ```
 
-### 4. Set Up and Run the Streamlit Application
+### 3. Set Up and Run the Streamlit Application
 
 Navigate to the Streamlit application directory [src/app](src/app) and follow these steps:
 
