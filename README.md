@@ -112,36 +112,9 @@ git clone https://github.com/nikunjd25/Azure-AI-Copilot-Chatbot-SQLDB.git
 cd Azure-AI-Copilot-Chatbot-SQLDB
 ```
 
-### 2. Deploy the Solution Using Bicep:  
-Navigate to the deployment directory:
-
-```bash
-cd infra
-```
-
-Then, use the following PowerShell command to deploy the solution. Make sure to replace the placeholders with your actual subscription name, Azure Region (ResourceGroupLocation), Azure SQL DB username, and password:
-
-**PowerShell**
-```bash
-.\deploy.ps1 -Subscription '[Subscription Name]' -Location 'eastus2' -SQLAdminUser '[User for SQL DB]' -SQLPassword '[Password to Create for SQL DB]'
-```
-This script will provision the necessary resources in your Azure subscription according to the specified parameters. The deployment may take upto **20 minutes** to provision all Azure resources.
-
-### 3. Allow Client IP Access to Azure SQL DB
-After deployment, you must grant your local environment access to the Azure SQL Database to run the Streamlit application. 
-To do this, add your client IP address to the database firewall rules.
-
-- Log in to the Azure portal.
-- Navigate to your Azure SQL database.
-- Click on **Set Server firewall**
-- Add your current client IP address to the list of allowed addresses.
-
-![firewall](./media/sqldb_firewall.png)
-
-![clientid](./media/sqldb_network_rule.png)
 
 
-### 4. Configure Environment Variables
+### 3. Configure Environment Variables
 
 To run this project, you need to create a .env file and populate it with the required environment variables. Follow these steps:
 
@@ -157,7 +130,7 @@ AZURE_SQL_CONNECTION_STRING="mssql+pymssql://sqlAdmin:sqlPassword@sql-agentqna-d
 AZURE_SQL_DATABASE_SCHEMA="SalesLT"
 ```
 
-### 5. Set Up and Run the Streamlit Application
+### 4. Set Up and Run the Streamlit Application
 
 Navigate to the Streamlit application directory [src/app](src/app) and follow these steps:
 
